@@ -29,12 +29,13 @@ const Navbar = () => {
                 <a href="#" className="hover:text-pink-400">Details</a>
                 <a href="#" className="hover:text-pink-400">Streams</a>
                 <div className="flex items-center bg-[#2a2b2c] px-4 py-2 rounded-full hover:bg-pink-400 hover:text-white ">
-                    <a href="#" className="mr-2 ">Profile</a>
+                      <a href="#" className="mr-2 ">Profile</a>
                     <img
                         src="src\home\image\profile.jpg"
                         alt="profile"
                         className="w-6 h-6 rounded-full"
                     />
+                 
                 </div>
             </div>
 
@@ -49,7 +50,7 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {isMenuOpen && (
-                <div className="absolute top-16 left-0 w-full bg-[#1A1B1C] px-6 py-4 shadow-md md:hidden z-10">
+                <div className="absolute top-24 left-0 w-full bg-[#1A1B1C] px-6 py-4 shadow-md md:hidden z-10">
                     <a href="#" className="block py-2 text-pink-400">Home</a>
                     <a href="#" className="block py-2 hover:text-pink-400">Browse</a>
                     <a href="#" className="block py-2 hover:text-pink-400">Details</a>
