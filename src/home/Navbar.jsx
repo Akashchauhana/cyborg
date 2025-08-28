@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FiSearch } from "react-icons/fi"; // For search icon
-
+import imgr from './image/logo.png';
+import imgr1 from './image/profile.jpg';
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -8,7 +9,7 @@ const Navbar = () => {
         <nav className=" text-gray-400 px-6 py-3 m-5 flex items-center justify-between w-full">
             {/* Logo */}
             <div className="flex items-center space-x-2 ">
-                <img src="src\home\image\logo.png" alt="logo" className="w-45 ml-8 " /> {/* Replace with actual logo */}
+                <img src={imgr} alt="logo" className="w-45 ml-8 " /> {/* Replace with actual logo */}
 
             </div>
 
@@ -31,7 +32,7 @@ const Navbar = () => {
                 <div className="flex items-center bg-[#2a2b2c] px-4 py-2 rounded-full hover:bg-pink-400 hover:text-white ">
                       <a href="#" className="mr-2 ">Profile</a>
                     <img
-                        src="src\home\image\profile.jpg"
+                        src={imgr1}
                         alt="profile"
                         className="w-6 h-6 rounded-full"
                     />
